@@ -13,16 +13,16 @@
    <project groups="oe" name="meta-openembedded" path="rdke/common/meta-openembedded" remote="rdke" revision="refs/tags/v1.0.0_dunfell" >
    <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_OPENEMBEDDED"/>
    </project>
-   <project groups="oe" name="poky" path="rdke/common/poky" remote="rdke" revision="refs/tags/v1.0.4">
+   <project groups="oe" name="poky" path="rdke/common/poky" remote="rdke" revision="feature/RDK-50635-Fix-broken-dev-dependency-pkg-config">
    <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_POKY"/>
    </project>
-   <project groups="layers" name="meta-oss-reference-release" path="rdke/common/meta-oss-reference-release" remote="rdke" revision="refs/tags/3.0.2">
+   <project groups="layers" name="meta-oss-reference-release" path="rdke/common/meta-oss-reference-release" remote="rdke" revision="refs/tags/3.0.3">
    <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_OSS_RELEASE"/>
    </project>
-   <project groups="layers" name="meta-rdk-oss-reference" path="rdke/common/meta-rdk-oss-reference" remote="rdke" revision="refs/tags/3.0.2">
+   <project groups="layers" name="meta-rdk-oss-reference" path="rdke/common/meta-rdk-oss-reference" remote="rdke" revision="refs/tags/3.0.3">
    <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_COMMON_OSS_REFERENCE"/>
    </project>
-   <project groups="products" name="meta-oss-vendor-raspberrypi" path="rdke/vendor/meta-oss-vendor" remote="rdkcentral" revision="refs/tags/1.0.0">
+   <project groups="products" name="meta-oss-vendor-raspberrypi" path="rdke/vendor/meta-oss-vendor" remote="rdkcentral" revision="refs/tags/1.0.1">
    <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_OSS_VENDOR"/>
    </project>
    <project groups="configs" name="rdke-common-config" path="rdke/configs/common" remote="rdke" revision="refs/tags/1.0.6">
@@ -34,15 +34,14 @@
    <project groups="configs" name="rdke-stb-config" path="rdke/configs/profile" remote="rdke" revision="refs/tags/1.0.0">
    <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_CONFIGS_PROFILE"/>
    </project>
-   <project groups="products" name="meta-product-raspberrypi" path="rdke/product/meta-raspberrypi4" remote="rdkcentral" revision="refs/tags/1.0.0">
+   <project groups="products" name="meta-product-raspberrypi" path="rdke/product/meta-raspberrypi4" remote="rdkcentral" revision="refs/tags/1.0.1">
    <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_PRODUCT_LAYER"/>
    </project>
    <project groups="layers" name="rdk/components/opensource/oe/meta-raspberrypi" path="rdke/vendor/meta-raspberrypi" remote="cmf" revision="dunfell">
    <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_BSP"/>
    </project>
-   <project groups="layers" name="meta-rdk-raspberrypi" path="rdke/vendor/meta-rdk-raspberrypi" remote="rdkcentral" revision="refs/tags/1.0.1">
+   <project groups="layers" name="meta-rdk-raspberrypi" path="rdke/vendor/meta-rdk-raspberrypi" remote="rdkcentral" revision="refs/tags/1.1.0">
    <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_PLATFORM"/>
    <annotation name="MANIFEST_EXPORT_PATH1" value="MANIFEST_PATH_BBLAYERS_TEMPLATE"/>
    </project>
-
 </manifest>
