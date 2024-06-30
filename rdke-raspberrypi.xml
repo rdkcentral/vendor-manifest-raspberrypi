@@ -13,7 +13,7 @@
    <project groups="oe" name="meta-openembedded" path="rdke/common/meta-openembedded" remote="rdke" revision="refs/tags/v1.0.0_dunfell" >
    <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_OPENEMBEDDED"/>
    </project>
-   <project groups="oe" name="poky" path="rdke/common/poky" remote="rdke" revision="feature/RDK-50635-Fix-broken-dev-dependency-pkg-config">
+   <project groups="oe" name="poky" path="rdke/common/poky" remote="rdke" revision="refs/tags/v1.0.4">
    <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_POKY"/>
    </project>
    <project groups="layers" name="meta-oss-reference-release" path="rdke/common/meta-oss-reference-release" remote="rdke" revision="refs/tags/3.0.3">
