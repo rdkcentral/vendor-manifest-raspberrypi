@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='utf-8'?>
+<manifest>
+    <remote fetch="ssh://git@github.com/rdk-e" name="rdke" review="https://github.com/rdk-e" />
+    <remote fetch="https://github.com/rdkcentral" name="rdkcentral" review="https://github.com/rdkcentral" />
+    <remote fetch="https://code.rdkcentral.com/r/a/" name="cmf" review="https://code.rdkcentral.com/r/a/" />
+    <remote fetch="http://git.yoctoproject.org/git" name="yocto" review=""/>
+
+    <project groups="buildscripts" name="build-scripts" path="scripts" remote="rdke" revision="refs/tags/2.0.5">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_SCRIPTS" />
+    </project>
+    <project groups="imagebuilder" name="meta-image-builder" path="rdke/common/meta-image-support" remote="rdke" revision="refs/tags/3.0.3">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_IMAGE_SUPPORT" />
+    </project>
+    <project groups="imagebuilder" name="meta-stacklayer-ipk" path="rdke/common/meta-stacklayer-ipk" remote="rdke" revision="refs/tags/1.1.0">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_IMAGE_SUPPORT_IPK"/>
+    </project>
+    <!-- Configs -->
+    <project groups="configs" name="rdke-common-config" path="rdke/configs/common" remote="rdke" revision="refs/tags/1.0.8">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_CONFIG_COMMON" />
+    </project>
+    <project groups="configs" name="rdke-stb-config" path="rdke/configs/profile" remote="rdke" revision="refs/tags/1.0.1">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_CONFIG_PROFILE" />
+    </project>
+    <!-- Yocto OE layers -->
+    <project groups="oe" name="meta-openembedded" path="rdke/common/meta-openembedded" remote="rdke" revision="refs/tags/v1.0.0_dunfell">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_OPENEMBEDDED" />
+    </project>
+    <project groups="oe" name="poky" path="rdke/common/poky" remote="rdke" revision="refs/tags/v1.0.5">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_POKY" />
+    </project>
+    <project groups="oe" name="meta-rust" path="rdke/middleware/meta-rust" remote="rdke" revision="refs/tags/GRT_v2">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_META_RUST" />
+    </project>
+    <project groups="oe" name="meta-python2" path="rdke/middleware/meta-python2" remote="rdke" revision="refs/tags/GRT_v2">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_META_PYTHON2" />
+    </project>
+    <project groups="oe" name="meta-gplv2" path="rdke/common/meta-gplv2" remote="yocto" revision="dunfell">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_META_GPLV2" />
+    </project>
+    <project groups="oe" name="rdk/components/opensource/oe/meta-raspberrypi" path="rdke/vendor/meta-raspberrypi" remote="cmf" revision="dunfell">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_BSP" />
+    </project>
+    <!-- Fooundation release layers -->
+    <project groups="layers" name="meta-foundation-release" path="rdke/foundation/meta-foundation-release" remote="rdke" revision="refs/tags/2.0.4">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_FOUNDATION_RELEASE" />
+    </project>
+    <!-- Middleware development layers -->
+    <project groups="rdk" name="meta-rdk-tools" path="rdke/common/meta-rdk-tools" remote="rdke" revision="refs/tags/2.1.0">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_RDK_TOOLS" />
+    </project>
+    <project groups="rdk" name="meta-middleware-development" path="rdke/middleware/meta-middleware-development" remote="rdke" revision="feature/rpi-open-platform-integration">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_MIDDLEWARE_DEV" />
+    </project>
+    <project groups="rdk" name="meta-rdk" path="rdke/middleware/meta-rdk" remote="rdke" revision="refs/tags/1.8.6">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_RDK" />
+    </project>
+    <project groups="rdk" name="meta-rdk-video" path="rdke/middleware/meta-rdk-video" remote="rdke" revision="refs/tags/1.8.8">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_RDK_VIDEO" />
+    </project>
+    <project groups="rdk" name="meta-rdk-restricted" path="rdke/middleware/meta-rdk-restricted" remote="rdke" revision="feature/rpi-open-platform-integration">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_RDK_RESTRICTED" />
+    </project>
+    <project groups="rdk" name="meta-rdk-voice-sdk" path="rdke/middleware/meta-rdk-voice-sdk" remote="rdke" revision="refs/tags/1.6.0">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_RDK_VOICE_SDK" />
+    </project>
+    <project groups="rdk" name="meta-rdk-halif-headers" path="rdke/common/meta-rdk-halif-headers" remote="rdke" revision="refs/tags/3.0.1">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_RDK_HALIF_HEADERS" />
+    </project>
+    <!-- OSS development layers -->
+    <project groups="layers" name="meta-oss-reference-development" path="rdke/common/meta-oss-reference-development" remote="rdke" revision="main">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_OSS_RELEASE" />
+    </project>
+    <project groups="layers" name="meta-rdk-oss-reference" path="rdke/common/meta-rdk-oss-reference" remote="rdke" revision="refs/tags/3.0.3">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_COMMON_OSS_REFERENCE" />
+    </project>
+    <!-- Vendor development layers -->
+    <project groups="products" name="meta-product-raspberrypi" path="rdke/product/meta-raspberrypi4" remote="rdkcentral" revision="main">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_PRODUCT_LAYER" />
+        <annotation name="MANIFEST_EXPORT_PATH1" value="MANIFEST_IS_OPEN_SOURCE" />
+    </project>
+    <project groups="vendor" name="meta-oss-vendor-raspberrypi" path="rdke/vendor/meta-oss-vendor" remote="rdkcentral" revision="main">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_VENDOR_DEVELOP" />
+    </project>
+    <project groups="vendor" name="meta-rdk-raspberrypi" path="rdke/vendor/meta-rdk-raspberrypi" remote="rdkcentral" revision="main">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_PLATFORM" />
+        <annotation name="MANIFEST_EXPORT_PATH1" value="MANIFEST_PATH_BBLAYERS_TEMPLATE" />
+    </project>
+</manifest>
