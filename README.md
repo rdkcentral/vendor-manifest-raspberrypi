@@ -5,7 +5,7 @@ Vendor layer manifest for RaspberryPi
 Note: use latest `TAG` for released versions or `develop` branch for develop HEAD.
 ```bash
 # Initialize the repository
-repo init -u https://github.com/rdkcentral/vendor-manifest-raspberrypi.git -m raspberrypi4-64.xml -b develop
+repo init -u https://github.com/rdkcentral/vendor-manifest-raspberrypi.git -m rdke-raspberrypi.xml -b develop
 
 # Synchronize the repository
 repo sync --no-clone-bundle --no-tags
