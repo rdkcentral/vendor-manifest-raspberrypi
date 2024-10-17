@@ -8,23 +8,22 @@
     <project groups="buildscripts" name="build-scripts" path="scripts" remote="rdke" revision="refs/tags/2.0.5">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_SCRIPTS"/>
     </project>
-    <project groups="imagebuilder" name="meta-stack-layering-support" path="rdke/common/meta-stack-layering-support" remote="rdke" revision="refs/tags/1.3.1">
+    <project groups="imagebuilder" name="meta-stack-layering-support" path="rdke/common/meta-stack-layering-support" remote="rdke" revision="refs/tags/3.0.0">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_STACK_LAYERING_SUPPORT"/>
     </project>
-    <project groups="buildsupport" name="meta-rdk-auxiliary" path="rdke/common/meta-rdk-auxiliary" remote="rdke" revision="f37760a21a6a656040244fb929d84c3d56551c11">
-        <!-- RDKVREFPLT-3302: Replace with meta-aux layer matching MANIFEST_EXPORT_PATH when its is available -->
+    <project groups="buildsupport" name="meta-rdk-auxiliary" path="rdke/common/meta-rdk-auxiliary" remote="rdke" revision="refs/tags/0.0.3">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_RDK_AUXILIARY" />
     </project>
     <project groups="oe" name="meta-openembedded" path="rdke/common/meta-openembedded" remote="rdke" revision="refs/tags/v1.0.0_dunfell" >
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_OPENEMBEDDED"/>
     </project>
-    <project groups="oe" name="poky" path="rdke/common/poky" remote="rdke" revision="refs/tags/v1.0.5">
+    <project groups="oe" name="poky" path="rdke/common/poky" remote="rdke" revision="refs/tags/v1.0.7">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_POKY"/>
     </project>
-    <project groups="layers" name="meta-oss-reference-release" path="rdke/common/meta-oss-reference-release" remote="rdke" revision="refs/tags/3.2.0">
+    <project groups="layers" name="meta-oss-reference-release" path="rdke/common/meta-oss-reference-release" remote="rdke" revision="refs/tags/3.4.0">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_OSS_RELEASE"/>
     </project>
-    <project groups="layers" name="meta-rdk-oss-reference" path="rdke/common/meta-rdk-oss-reference" remote="rdke" revision="refs/tags/3.2.0">
+    <project groups="layers" name="meta-rdk-oss-reference" path="rdke/common/meta-rdk-oss-reference" remote="rdke" revision="refs/tags/3.4.1">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_COMMON_OSS_REFERENCE"/>
     </project>
     <project groups="configs" name="rdke-common-config" path="rdke/configs/common" remote="rdke" revision="refs/tags/1.0.8">
@@ -36,14 +35,14 @@
     <project groups="configs" name="rdke-stb-config" path="rdke/configs/profile" remote="rdke" revision="refs/tags/1.0.1">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_CONFIGS_PROFILE"/>
     </project>
-    <project groups="products" name="meta-product-raspberrypi" path="rdke/product/meta-product-raspberrypi" remote="rdkcentral" revision="refs/tags/1.1.0">
+    <project groups="products" name="meta-product-raspberrypi" path="rdke/product/meta-product-raspberrypi" remote="rdkcentral" revision="refs/tags/1.1.1">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_PRODUCT_LAYER"/>
     </project>
     <!-- Vendor layers -->
     <project groups="layers" name="meta-oss-vendor-raspberrypi" path="rdke/vendor/meta-oss-vendor" remote="rdkcentral" revision="refs/tags/1.0.3">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_OSS_VENDOR"/>
     </project>
-    <project groups="layers" name="meta-rdk-raspberrypi" path="rdke/vendor/meta-rdk-raspberrypi" remote="rdkcentral" revision="refs/tags/1.2.8">
+    <project groups="layers" name="meta-rdk-raspberrypi" path="rdke/vendor/meta-rdk-raspberrypi" remote="rdkcentral" revision="refs/tags/1.2.9">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_PLATFORM"/>
         <annotation name="MANIFEST_EXPORT_PATH1" value="MANIFEST_PATH_BBLAYERS_TEMPLATE"/>
     </project>
