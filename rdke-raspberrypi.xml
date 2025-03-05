@@ -48,7 +48,7 @@
         <annotation name="MANIFEST_EXPORT_PATH1" value="MANIFEST_PATH_BBLAYERS_TEMPLATE"/>
     </project>
     <!-- Use https://git.yoctoproject.org/meta-raspberrypi/commit/?h=kirkstone&id=ab5815a2ca0a460398878f77a7e39bc1a6dfe0bf -->
-    <project groups="layers" name="meta-raspberrypi" path="rdke/vendor/meta-raspberrypi" remote="oe" upstream="kirkstone">
+    <project groups="layers" name="meta-raspberrypi" path="rdke/vendor/meta-raspberrypi" remote="oe" revision="d7544f35756d87834e8b4bf3e3e733c771d380ae" upstream="kirkstone">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_BSP"/>
     </project>
 </manifest>
