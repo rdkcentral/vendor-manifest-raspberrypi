@@ -17,7 +17,7 @@
     <project groups="oe" name="meta-openembedded" path="rdke/common/meta-openembedded" remote="rdkcentral" revision="rdk/kirkstone">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_OPENEMBEDDED"/>
     </project>
-    <project groups="oe" name="poky" path="rdke/common/poky" remote="rdkcentral" revision="rdk/kirkstone>
+    <project groups="oe" name="poky" path="rdke/common/poky" remote="rdkcentral" revision="rdk/kirkstone">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_POKY"/>
     </project>
     <project groups="layers" name="meta-oss-reference-release" path="rdke/common/meta-oss-reference-release" remote="rdkcentral" revision="develop">
