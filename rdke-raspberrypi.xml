@@ -12,7 +12,7 @@
     <project groups="stacklayering" name="meta-stack-layering-support" path="rdke/common/meta-stack-layering-support" remote="rdkcentral" revision="refs/tags/1.1.2">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_STACK_LAYERING_SUPPORT"/>
     </project>
-    <project groups="buildsupport" name="meta-rdk-auxiliary" path="rdke/common/meta-rdk-auxiliary" remote="rdkcentral" revision="refs/tags/1.0.0">
+    <project groups="buildsupport" name="meta-rdk-auxiliary" path="rdke/common/meta-rdk-auxiliary" remote="rdkcentral" revision="805d9bb428c7277de19f60c500b1fc4d28e0480f">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_RDK_AUXILIARY" />
     </project>
     <project groups="oe" name="meta-openembedded" path="rdke/common/meta-openembedded" remote="rdkcentral" revision="rdk/kirkstone">
@@ -43,10 +43,10 @@
     <project groups="products" name="meta-oss-vendor-raspberrypi" path="rdke/vendor/meta-oss-vendor" remote="rdkcentral" revision="refs/tags/4.0.2">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_OSS_VENDOR"/>
     </project>
-    <project groups="products" name="meta-product-raspberrypi" path="rdke/product/meta-product-raspberrypi" remote="rdkcentral" revision="ac2b3baf5aac25dd4ede0c364b44afb69f5e194b">
+    <project groups="products" name="meta-product-raspberrypi" path="rdke/product/meta-product-raspberrypi" remote="rdkcentral" revision="6cb13f009ce2b77d780b97e2f031284d2a1750f1">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_PRODUCT_LAYER"/>
     </project>
-    <project groups="layers" name="meta-vendor-raspberrypi-dev" path="rdke/vendor/meta-vendor-raspberrypi-dev" remote="rdkcentral" revision="refs/tags/4.1.1">
+    <project groups="layers" name="meta-vendor-raspberrypi-dev" path="rdke/vendor/meta-vendor-raspberrypi-dev" remote="rdkcentral" revision="2482555e7ba9f798990c37d5325a3554acfafe51">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_PLATFORM"/>
         <annotation name="MANIFEST_EXPORT_PATH1" value="MANIFEST_PATH_BBLAYERS_TEMPLATE"/>
     </project>
