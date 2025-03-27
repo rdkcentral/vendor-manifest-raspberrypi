@@ -27,6 +27,9 @@
     <project groups="layers" name="meta-rdk-oss-reference" path="rdke/common/meta-rdk-oss-reference" remote="rdkcentral" revision="refs/tags/1.1.0">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_COMMON_OSS_REFERENCE"/>
     </project>
+    <project groups="extention" name="meta-rdk-oss-ext" path="rdke/configs/ext" remote="rdke" revision="refs/tags/1.1.0">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_OSS_EXT"/>
+    </project>    
     <project groups="rdk" name="meta-rdk-halif-headers" path="rdke/common/meta-rdk-halif-headers" remote="rdkcentral" revision="refs/tags/1.0.3">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_RDK_HALIF_HEADERS"/>
     </project>
