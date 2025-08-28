@@ -34,7 +34,7 @@ The produced IPK objects that can be found here: ./build-raspberrypi4-64-rdke/tm
  
 1, Copy or rsync the IPK feed into a location in the local file system, e.g.
    ->
-   Rsyncing from ./build-raspberrypi4-64-rdke/tmp/deploy/ipk/raspberrypi4-64-rdke-vendor/* to ${HOME}/community_shared/raspberrypi4-64-rdke-vendor/<OSS IPK Version>/ipk/
+   Rsyncing from ./build-raspberrypi4-64-rdke/tmp/deploy/ipk/raspberrypi4-64-rdke-vendor/* to ${HOME}/community_shared/raspberrypi4-64-rdke-vendor/${OSS IPK Version}/ipk/
 
 Eg: Steps to build the reference RaspberryPi vendor stack from `develop` branch
 ```bash
