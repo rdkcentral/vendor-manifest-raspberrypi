@@ -1,4 +1,4 @@
-# 📦 Vendor Manifest for Raspberry Pi
+# Vendor Manifest for Raspberry Pi
 
 [![Release](https://img.shields.io/github/v/tag/rdkcentral/vendor-manifest-raspberrypi?label=latest%20tag)](https://github.com/rdkcentral/vendor-manifest-raspberrypi/tags)
 [![License](https://img.shields.io/github/license/rdkcentral/vendor-manifest-raspberrypi)](LICENSE)
@@ -9,23 +9,23 @@ Vendor layer manifest for Raspberry Pi — this repo provides the manifest and i
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 
-- [📦 Vendor Manifest for Raspberry Pi](#-vendor-manifest-for-raspberry-pi)
-  - [📑 Table of Contents](#-table-of-contents)
-  - [🚀 Quick Start](#-quick-start)
-  - [🔧 Setup IPK Feeds](#-setup-ipk-feeds)
+- [Vendor Manifest for Raspberry Pi](#-vendor-manifest-for-raspberry-pi)
+  - [Table of Contents](#-table-of-contents)
+  - [Quick Start](#-quick-start)
+  - [Setup IPK Feeds](#-setup-ipk-feeds)
     - [Configure OSS IPK Feed](#configure-oss-ipk-feed)
-  - [🏗️ Build Environment](#️-build-environment)
-  - [📦 Building Targets](#-building-targets)
-  - [📂 Deploying IPK Feed](#-deploying-ipk-feed)
+  - [Build Environment](#️-build-environment)
+  - [Building Targets](#-building-targets)
+  - [Deploying IPK Feed](#-deploying-ipk-feed)
     - [Notes](#notes)
-  - [📝 Example: Building from `develop` Branch or Release tag `V4.6.0`](#-example-building-from-develop-branch-or-release-tag-v460)
-  - [📄 License](#-license)
+  - [Example: Building from `develop` Branch or Release tag `V4.6.0`](#-example-building-from-develop-branch-or-release-tag-v460)
+  - [License](#-license)
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 > Use a release **tag** for stable builds or `develop` for the latest development branch.
 
@@ -36,7 +36,7 @@ repo sync
 
 ---
 
-## 🔧 Setup IPK Feeds
+## Setup IPK Feeds
 
 IPK feeds are required for package installation and dependency resolution in downstream layers. You can configure local (file-based) feeds or remote feeds.
 
@@ -56,7 +56,7 @@ OSS_IPK_SERVER_PATH = "file:/${HOME}/community_shared/rdk-arm64-oss/<OSS-IPK-Ver
 
 ---
 
-## 🏗️ Build Environment
+## Build Environment
 
 Initialize your build environment for the Raspberry Pi 4 (64-bit) server:
 
@@ -77,7 +77,7 @@ When enabled, the build will produce `Packages.gz` for each architecture in:
 
 ---
 
-## 📦 Building Targets
+## Building Targets
 
 Choose one (or both) of the following targets depending on your goal:
 
@@ -100,7 +100,7 @@ The generated IPKs are located at:
 
 ---
 
-## 📂 Deploying IPK Feed
+## Deploying IPK Feed
 
 Copy or sync the generated IPK feed to your shared/local repository path:
 
@@ -120,7 +120,7 @@ After syncing, confirm the `Packages.gz` files and directory layout are correct 
   
 ---
 
-## 📝 Example: Building from `develop` Branch or Release tag `V4.6.0`
+## Example: Building from `develop` Branch or Release tag `V4.6.0`
 
 A fully copy-paste example to build from `develop` or Release tag `V4.6.0`:
 
@@ -144,6 +144,6 @@ bitbake lib32-vendor-test-image
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under **Apache-2.0**. See the [LICENSE](LICENSE) file for details.
