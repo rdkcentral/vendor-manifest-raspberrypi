@@ -17,5 +17,4 @@
     <submanifest name="platform" project="vendor-manifest-raspberrypi" manifest-name="rdke-platform.xml" path="rdke" remote="rdkcentral" revision="feature/RDKEVL-6768">
     </submanifest>
 
-
 </manifest>
