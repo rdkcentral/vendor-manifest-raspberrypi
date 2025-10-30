@@ -14,7 +14,11 @@
     </submanifest>
 
     <!-- Vendor layers submanifest -->
-    <submanifest name="platform" project="vendor-manifest-raspberrypi" manifest-name="rdke-platform.xml" path="rdke" remote="rdkcentral" revision="feature/RDKEVL-6768">
+    <submanifest name="platform" project="vendor-manifest-raspberrypi" manifest-name="rdke-rpi-platform.xml" path="rdke/vendor" remote="rdkcentral" revision="feature/RDKEVL-6768">
+    </submanifest>
+
+    <!-- product layer submanifest -->
+    <submanifest name="product" project="vendor-manifest-raspberrypi" manifest-name="rdke-rpi-product.xml" path="rdke/product" remote="rdkcentral" revision="feature/RDKEVL-6768">
     </submanifest>
 
 </manifest>
