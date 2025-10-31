@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <yocto version="kirkstone" />
+    <remote fetch="https://github.com/rdkcentral" name="rdkcentral" review="https://github.com/rdkcentral"/>
+    <remote fetch="https://git.yoctoproject.org" name="oe" review="https://git.yoctoproject.org"/>
+
+    <!-- Vendor layers -->
+    <project groups="products" name="meta-product-raspberrypi" path="meta-product-raspberrypi" remote="rdkcentral" revision="develop">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_PRODUCT_LAYER"/>
+    </project>
+</manifest>
