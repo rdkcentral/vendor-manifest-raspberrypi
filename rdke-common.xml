@@ -16,10 +16,10 @@
     <project groups="oe" name="poky" path="common/poky" remote="rdkcentral" revision="refs/tags/rdk-4.4.1">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_POKY"/>
     </project>
-    <project groups="layers" name="meta-oss-reference-release" path="common/meta-oss-reference-release" remote="rdkcentral" revision="refs/tags/4.7.4-community">
+    <project groups="layers" name="meta-oss-reference-release" path="common/meta-oss-reference-release" remote="rdkcentral" revision="refs/tags/4.8.0">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_OSS_RELEASE"/>
     </project>
-    <project groups="layers" name="meta-rdk-oss-reference" path="common/meta-rdk-oss-reference" remote="rdkcentral" revision="refs/tags/4.7.4-community">
+    <project groups="layers" name="meta-rdk-oss-reference" path="common/meta-rdk-oss-reference" remote="rdkcentral" revision="refs/tags/4.8.0">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_COMMON_OSS_REFERENCE"/>
     </project>
     <project groups="extention" name="meta-oss-common-config" path="configs/ext" remote="rdkcentral" revision="refs/tags/1.3.0">
@@ -31,7 +31,7 @@
     <project groups="configs" name="rdke-stb-config" path="configs/profile" remote="rdkcentral" revision="refs/tags/1.0.0">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_CONFIGS_PROFILE"/>
     </project>
-    <project groups="configs" name="rdke-common-config" path="configs/common" remote="rdkcentral" revision="refs/tags/1.0.8">
+    <project groups="configs" name="rdke-common-config" path="configs/common" remote="rdkcentral" revision="refs/tags/1.0.9">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_CONFIG_COMMON"/>
     </project>
 </manifest>
