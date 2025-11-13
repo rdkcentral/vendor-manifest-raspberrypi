@@ -29,7 +29,7 @@
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_RDK_HALIF_HEADERS"/>
     </project>
     <project groups="configs" name="rdke-stb-config" path="configs/profile" remote="rdkcentral" revision="refs/tags/1.0.0">
-        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_CONFIGS_PROFILE"/>
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_PROFILE_CONFIG"/>
     </project>
     <project groups="configs" name="rdke-common-config" path="configs/common" remote="rdkcentral" revision="refs/tags/1.0.9">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_CONFIG_COMMON"/>
