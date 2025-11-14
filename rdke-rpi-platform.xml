@@ -9,7 +9,7 @@
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_OSS_VENDOR"/>
     </project>
     
-    <project groups="layers" name="meta-vendor-raspberrypi-dev" path="meta-vendor-raspberrypi-dev" remote="rdkcentral" revision="637b5120d3f7f559c52e732e0b23b5ff42f062f9">
+    <project groups="layers" name="meta-vendor-raspberrypi-dev" path="meta-vendor-raspberrypi-dev" remote="rdkcentral" revision="2ff44bfa9ac0a4d6a758dc69a331a166adb6a611">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_PLATFORM"/>
         <annotation name="MANIFEST_EXPORT_PATH1" value="MANIFEST_PATH_BBLAYERS_TEMPLATE"/>
     </project>
