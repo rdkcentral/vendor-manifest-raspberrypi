@@ -93,6 +93,24 @@ bitbake lib32-vendor-test-image
 
 ✅ At least one of the above must succeed to produce a usable IPK feed. Ideally both should succeed.
 
+### Build Targets Using Multiconfig (Debug/Prod/ProdLog)
+
+To build different variants of the vendor layer image using multiconfig:
+
+```bash
+# Build debug (dev) variant of vendor layer image (NOTE - Default is debug)
+bitbake lib32-vendor-test-image
+
+# Build prod variant of vendor layer image
+bitbake mc:prod:lib32-vendor-test-image
+
+# Build prodlog variant of vendor layer image
+bitbake mc:prodlog:lib32-vendor-test-image
+
+# Build all variants of vendor layer image
+bitbake lib32-vendor-test-image mc:prod:lib32-vendor-test-image mc:prodlog:lib32-vendor-test-image
+```
+
 The generated IPKs are located at:
 ```
 ./build-raspberrypi4-64-rdke/tmp/deploy/ipk/raspberrypi4-64-rdke-vendor/
