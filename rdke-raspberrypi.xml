@@ -10,7 +10,7 @@
     </project>
 
     <!-- Common submanifest -->
-    <submanifest name="common" project="vendor-manifest-raspberrypi" manifest-name="rdke-common.xml" path="rdke" remote="rdkcentral" revision="feature/RDKEVL-6761">
+    <submanifest name="common" project="vendor-manifest-raspberrypi" manifest-name="rdke-common.xml" path="rdke" remote="rdkcentral" revision="develop">
     </submanifest>
 
     <!-- Vendor layers submanifest -->
