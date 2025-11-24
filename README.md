@@ -93,9 +93,34 @@ bitbake lib32-vendor-test-image
 
 ✅ At least one of the above must succeed to produce a usable IPK feed. Ideally both should succeed.
 
+### Build Targets Using Multiconfig (Debug/Prod/ProdLog)
+
+To build different variants of the vendor layer image using multiconfig:
+
+```bash
+# Build debug (dev) variant of vendor layer image (NOTE - Default is debug)
+bitbake lib32-vendor-test-image
+
+# Build prod variant of vendor layer image
+bitbake mc:prod:lib32-vendor-test-image
+
+# Build prodlog variant of vendor layer image
+bitbake mc:prodlog:lib32-vendor-test-image
+
+# Build all variants of vendor layer image
+bitbake lib32-vendor-test-image mc:prod:lib32-vendor-test-image mc:prodlog:lib32-vendor-test-image
+```
+
 The generated IPKs are located at:
 ```
+# Debug variant (default)
 ./build-raspberrypi4-64-rdke/tmp/deploy/ipk/raspberrypi4-64-rdke-vendor/
+
+# Prod variant
+./build-raspberrypi4-64-rdke/tmp-prod/deploy/ipk/raspberrypi4-64-rdke-vendor/
+
+# ProdLog variant
+./build-raspberrypi4-64-rdke/tmp-prodlog/deploy/ipk/raspberrypi4-64-rdke-vendor/
 ```
 
 ---
@@ -105,7 +130,14 @@ The generated IPKs are located at:
 Copy or sync the generated IPK feed to your shared/local repository path:
 
 ```bash
-rsync -av ./build-raspberrypi4-64-rdke/tmp/deploy/ipk/raspberrypi4-64-rdke-vendor/*  ~/community_shared/raspberrypi4-64-rdke-vendor/<OSS-IPK-Version>/ipk/
+# Debug variant (default)
+rsync -av ./build-raspberrypi4-64-rdke/tmp/deploy/ipk/raspberrypi4-64-rdke-vendor/* ~/community_shared/raspberrypi4-64-rdke-vendor/<OSS-IPK-Version>/ipk/
+
+# Prod variant
+rsync -av ./build-raspberrypi4-64-rdke/tmp-prod/deploy/ipk/raspberrypi4-64-rdke-vendor/* ~/community_shared/raspberrypi4-64-rdke-vendor/<OSS-IPK-Version>/ipk/
+
+# ProdLog variant
+rsync -av ./build-raspberrypi4-64-rdke/tmp-prodlog/deploy/ipk/raspberrypi4-64-rdke-vendor/* ~/community_shared/raspberrypi4-64-rdke-vendor/<OSS-IPK-Version>/ipk/
 ```
 
 After syncing, confirm the `Packages.gz` files and directory layout are correct for the consumers of the feed.
@@ -138,8 +170,17 @@ echo 'DEPLOY_IPK_FEED = "1"' >> conf/local.conf
 # Option A: Build vendor IPK feed
 bitbake lib32-packagegroup-vendor-layer
 
-# Option B: Build bootable vendor test image
+# Option B: Build bootable vendor test image (debug/dev variant - default)
 bitbake lib32-vendor-test-image
+
+# Option C: Build prod variant of vendor layer image
+bitbake mc:prod:lib32-vendor-test-image
+
+# Option D: Build prodlog variant of vendor layer image
+bitbake mc:prodlog:lib32-vendor-test-image
+
+# Option E: Build all variants of vendor layer image
+bitbake lib32-vendor-test-image mc:prod:lib32-vendor-test-image mc:prodlog:lib32-vendor-test-image
 ```
 
 ---
