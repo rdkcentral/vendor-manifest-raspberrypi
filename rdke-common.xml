@@ -22,7 +22,7 @@
     <project groups="layers" name="meta-rdk-oss-reference" path="common/meta-rdk-oss-reference" remote="rdkcentral" revision="refs/tags/4.8.0">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_COMMON_OSS_REFERENCE"/>
     </project>
-    <project groups="extention" name="meta-oss-common-config" path="configs/ext" remote="rdkcentral" revision="refs/tags/1.3.0">
+    <project groups="extention" name="meta-oss-common-config" path="configs/ext" remote="rdkcentral" revision="refs/tags/1.3.1">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_OSS_EXT"/>
     </project>
     <project groups="rdk" name="meta-rdk-halif-headers" path="common/meta-rdk-halif-headers" remote="rdkcentral" revision="refs/tags/3.0.2">
@@ -31,7 +31,7 @@
     <project groups="configs" name="rdke-stb-config" path="configs/profile" remote="rdkcentral" revision="refs/tags/1.0.0">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_PROFILE_CONFIG"/>
     </project>
-    <project groups="configs" name="rdke-common-config" path="configs/common" remote="rdkcentral" revision="refs/tags/1.0.9">
+    <project groups="configs" name="rdke-common-config" path="configs/common" remote="rdkcentral" revision="refs/tags/1.0.10">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_CONFIG_COMMON"/>
     </project>
     <project groups="layers" name="meta-image-support-rdke" path="vendor/meta-image-support-rdke" remote="rdkcentral" revision="develop">
