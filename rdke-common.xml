@@ -34,7 +34,7 @@
     <project groups="configs" name="rdke-common-config" path="configs/common" remote="rdkcentral" revision="refs/tags/1.0.10">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_CONFIG_COMMON"/>
     </project>
-    <project groups="layers" name="meta-image-support-rdke" path="vendor/meta-image-support-rdke" remote="rdkcentral" revision="develop">
+    <project groups="layers" name="meta-image-support-rdke" path="vendor/meta-image-support-rdke" remote="rdkcentral" revision="release/1.0.0">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_IMAGE_SUPPORT_RDKE"/>
     </project>
 </manifest>
