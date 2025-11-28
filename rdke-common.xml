@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <yocto version="kirkstone" />
+    <remote fetch="https://github.com/rdkcentral" name="rdkcentral" review="https://github.com/rdkcentral"/>
+    <remote fetch="https://git.yoctoproject.org" name="oe" review="https://git.yoctoproject.org"/>
+
+    <project groups="stacklayering" name="meta-stack-layering-support" path="common/meta-stack-layering-support" remote="rdkcentral" revision="refs/tags/3.0.1">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_STACK_LAYERING_SUPPORT"/>
+    </project>
+    <project groups="buildsupport" name="meta-rdk-auxiliary" path="common/meta-rdk-auxiliary" remote="rdkcentral" revision="refs/tags/1.6.0">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_RDK_AUXILIARY" />
+    </project>
+    <project groups="oe" name="meta-openembedded" path="common/meta-openembedded" remote="rdkcentral" revision="refs/tags/rdk-4.0.0">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_OPENEMBEDDED"/>
+    </project>
+    <project groups="oe" name="poky" path="common/poky" remote="rdkcentral" revision="refs/tags/rdk-4.4.1">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_POKY"/>
+    </project>
+    <project groups="layers" name="meta-oss-reference-release" path="common/meta-oss-reference-release" remote="rdkcentral" revision="refs/tags/4.9.0">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_OSS_RELEASE"/>
+    </project>
+    <project groups="layers" name="meta-rdk-oss-reference" path="common/meta-rdk-oss-reference" remote="rdkcentral" revision="refs/tags/4.9.0">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_COMMON_OSS_REFERENCE"/>
+    </project>
+    <project groups="extention" name="meta-oss-common-config" path="configs/ext" remote="rdkcentral" revision="refs/tags/1.3.1">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_OSS_EXT"/>
+    </project>
+    <project groups="rdk" name="meta-rdk-halif-headers" path="common/meta-rdk-halif-headers" remote="rdkcentral" revision="refs/tags/3.0.2">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_RDK_HALIF_HEADERS"/>
+    </project>
+    <project groups="configs" name="rdke-stb-config" path="configs/profile" remote="rdkcentral" revision="refs/tags/1.0.0">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_PROFILE_CONFIG"/>
+    </project>
+    <project groups="configs" name="rdke-common-config" path="configs/common" remote="rdkcentral" revision="refs/tags/1.0.10">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_CONFIG_COMMON"/>
+    </project>
+    <project groups="layers" name="meta-image-support-rdke" path="vendor/meta-image-support-rdke" remote="rdkcentral" revision="refs/tags/1.0.0">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_IMAGE_SUPPORT_RDKE"/>
+    </project>
+</manifest>
