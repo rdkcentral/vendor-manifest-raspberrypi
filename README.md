@@ -18,9 +18,10 @@ Vendor layer manifest for Raspberry Pi — this repo provides the manifest and i
     - [Configure OSS IPK Feed](#configure-oss-ipk-feed)
   - [Build Environment](#build-environment)
   - [Building Targets](#building-targets)
+    - [Build Targets Using Multiconfig (Debug/Prod/ProdLog)](#build-targets-using-multiconfig-debugprodprodlog)
   - [Deploying IPK Feed](#deploying-ipk-feed)
     - [Notes](#notes)
-  - [Example: Building from `develop` Branch or Release tag `V4.8.0`](#example-building-from-develop-branch-or-release-tag-v480)
+  - [Example: Building from `develop` Branch or Release tag `V4.9.0`](#example-building-from-develop-branch-or-release-tag-v490)
   - [License](#license)
 
 ---
@@ -152,13 +153,13 @@ After syncing, confirm the `Packages.gz` files and directory layout are correct 
   
 ---
 
-## Example: Building from `develop` Branch or Release tag `V4.8.0`
+## Example: Building from `develop` Branch or Release tag `V4.9.0`
 
-A fully copy-paste example to build from `develop` or Release tag `V4.8.0`:
+A fully copy-paste example to build from `develop` or Release tag `V4.9.0`:
 
 ```bash
-# Option A: Building from release tag V4.8.0
-repo init -u "https://github.com/rdkcentral/vendor-manifest-raspberrypi/" -b refs/tags/4.8.0 -m rdke-raspberrypi.xml
+# Option A: Building from release tag V4.9.0
+repo init -u "https://github.com/rdkcentral/vendor-manifest-raspberrypi/" -b refs/tags/4.9.0 -m rdke-raspberrypi.xml
 
 # Option A: Building from develop Branch
 repo init -u "https://github.com/rdkcentral/vendor-manifest-raspberrypi/" -b develop -m rdke-raspberrypi.xml
