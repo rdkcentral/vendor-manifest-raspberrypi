@@ -22,10 +22,11 @@
     </submanifest>
 
     <!-- soc submanifest -->
-    <submanifest name="rtk" project="collaboration/soc/realtek/vendor-manifest-rdke-realtek" manifest-name="rdke-rtk-vendor.xml" path="rdke" remote="cmf" revision="feature/RDKEVL-6715-POC">
+    <submanifest name="rtk" project="collaboration/soc/realtek/vendor-manifest-rdke-realtek" manifest-name="rdke-rtk-vendor.xml" path="rdke/rtk" remote="cmf" revision="feature/RDKEVL-6715-POC">
     </submanifest>
+    
 
-    <submanifest name="bcm" project="collaboration/soc/broadcom/vendor-manifest-rdke-broadcom" manifest-name="rdke-bcm-vendor.xml" path="rdke" remote="cmf" revision="feature/RDKEVL-6715-POC">
+    <submanifest name="bcm" project="collaboration/soc/broadcom/vendor-manifest-rdke-broadcom" manifest-name="rdke-bcm-vendor.xml" path="rdke/bcm" remote="cmf" revision="feature/RDKEVL-6715-POC">
     </submanifest>
 
 </manifest>
