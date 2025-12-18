@@ -10,15 +10,15 @@
     </project>
 
     <!-- Common submanifest -->
-    <submanifest name="common" project="vendor-manifest-raspberrypi" manifest-name="rdke-common.xml" path="rdke" remote="rdkcentral" revision="release/4.9.1">
+    <submanifest name="common" project="vendor-manifest-raspberrypi" manifest-name="rdke-common.xml" path="rdke" remote="rdkcentral" revision="refs/tags/4.9.1">
     </submanifest>
 
     <!-- Vendor layers submanifest -->
-    <submanifest name="platform" project="vendor-manifest-raspberrypi" manifest-name="rdke-rpi-platform.xml" path="rdke/vendor" remote="rdkcentral" revision="release/4.9.1">
+    <submanifest name="platform" project="vendor-manifest-raspberrypi" manifest-name="rdke-rpi-platform.xml" path="rdke/vendor" remote="rdkcentral" revision="refs/tags/4.9.1">
     </submanifest>
 
     <!-- product layer submanifest -->
-    <submanifest name="product" project="vendor-manifest-raspberrypi" manifest-name="rdke-rpi-product.xml" path="rdke/product" remote="rdkcentral" revision="release/4.9.1">
+    <submanifest name="product" project="vendor-manifest-raspberrypi" manifest-name="rdke-rpi-product.xml" path="rdke/product" remote="rdkcentral" revision="refs/tags/4.9.1">
     </submanifest>
 
 </manifest>
