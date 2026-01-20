@@ -16,6 +16,9 @@
     <project groups="oe" name="poky" path="common/poky" remote="rdkcentral" revision="refs/tags/rdk-4.5.0">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_POKY"/>
     </project>
+    <project groups="layers" name="meta-oss-reference-release" path="common/meta-oss-reference-release" remote="rdkcentral" revision="refs/tags/4.10.0">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_OSS_RELEASE"/>
+    </project>
     <project groups="layers" name="meta-rdk-oss-reference" path="common/meta-rdk-oss-reference" remote="rdkcentral" revision="refs/tags/4.10.0">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_COMMON_OSS_REFERENCE"/>
     </project>
