@@ -5,17 +5,17 @@
     <remote fetch="https://git.yoctoproject.org" name="oe" review="https://git.yoctoproject.org"/>
 
     <!-- Vendor layers -->
-    <project groups="products" name="meta-oss-vendor-raspberrypi" path="vendor/meta-vendor-raspberrypi-oss" remote="rdkcentral" revision="develop">
+    <project groups="products" name="meta-oss-vendor-raspberrypi" path="meta-vendor-raspberrypi-oss" remote="rdkcentral" revision="develop">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_OSS_VENDOR"/>
     </project>
 
-    <project groups="layers" name="meta-vendor-raspberrypi-dev" path="vendor/meta-vendor-raspberrypi-dev" remote="rdkcentral" revision="develop">
+    <project groups="layers" name="meta-vendor-raspberrypi-dev" path="meta-vendor-raspberrypi-dev" remote="rdkcentral" revision="develop">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_PLATFORM"/>
         <annotation name="MANIFEST_EXPORT_PATH1" value="MANIFEST_PATH_BBLAYERS_TEMPLATE"/>
     </project>
 
     <!-- Use https://git.yoctoproject.org/meta-raspberrypi/commit/?h=kirkstone&id=ab5815a2ca0a460398878f77a7e39bc1a6dfe0bf -->
-    <project groups="layers" name="meta-raspberrypi" path="vendor/soc/meta-raspberrypi" remote="oe" revision="ab5815a2ca0a460398878f77a7e39bc1a6dfe0bf" upstream="kirkstone">
+    <project groups="layers" name="meta-raspberrypi" path="meta-raspberrypi" remote="oe" revision="ab5815a2ca0a460398878f77a7e39bc1a6dfe0bf" upstream="kirkstone">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_BSP"/>
     </project>
 </manifest>
