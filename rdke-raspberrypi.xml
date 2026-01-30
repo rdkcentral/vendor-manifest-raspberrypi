@@ -10,7 +10,7 @@
     </project>
 
     <!-- Common submanifest -->
-    <submanifest name="common" project="vendor-manifest-raspberrypi" manifest-name="rdke-common.xml" path="rdke" remote="rdkcentral" revision="develop">
+    <submanifest name="common" project="vendor-manifest-raspberrypi" manifest-name="rdke-common.xml" remote="rdkcentral" revision="develop">
     </submanifest>
 
     <!-- include vendor layers manifest from same repo -->
@@ -18,5 +18,4 @@
 
     <!-- include product layer manifest from same repo -->
     <include name="rdke-rpi-product.xml"/>
-
 </manifest>
