@@ -9,13 +9,15 @@
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_SCRIPTS"/>
     </project>
 
-    <!-- Common submanifest -->
-    <submanifest name="common" project="vendor-manifest-raspberrypi" manifest-name="rdke-common.xml" path="rdke" remote="rdkcentral" revision="develop">
+    <!-- Common from same repo using submanifest -->
+    <submanifest name="common" project="vendor-manifest-raspberrypi" manifest-name="rdke-common.xml" path="rdke" remote="rdkcentral">
     </submanifest>
 
-    <!-- include vendor layers manifest from same repo -->
-    <include name="rdke-rpi-platform.xml"/>
+    <!-- Vendor from same repo using submanifest -->
+    <submanifest name="platform" project="vendor-manifest-raspberrypi" manifest-name="rdke-rpi-platform.xml" path="rdke/vendor" remote="rdkcentral">
+    </submanifest>
 
-    <!-- include product layer manifest from same repo -->
-    <include name="rdke-rpi-product.xml"/>
+    <!-- Product from same repo using submanifest -->
+    <submanifest name="product" project="vendor-manifest-raspberrypi" manifest-name="rdke-rpi-product.xml" path="rdke/product" remote="rdkcentral">
+    </submanifest>
 </manifest>
