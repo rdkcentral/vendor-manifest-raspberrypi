@@ -12,13 +12,25 @@
     <!-- Common submanifest -->
     <submanifest name="common" project="vendor-manifest-raspberrypi" manifest-name="rdke-common.xml" path="rdke" remote="rdkcentral" revision="develop">
     </submanifest>
-
-    <!-- Vendor layers submanifest -->
-    <submanifest name="platform" project="vendor-manifest-raspberrypi" manifest-name="rdke-rpi-platform.xml" path="rdke/vendor" remote="rdkcentral" revision="develop">
-    </submanifest>
-
-    <!-- product layer submanifest -->
-    <submanifest name="product" project="vendor-manifest-raspberrypi" manifest-name="rdke-rpi-product.xml" path="rdke/product" remote="rdkcentral" revision="develop">
-    </submanifest>
+    
+    <!-- Vendor layers -->
+    <project groups="products" name="meta-product-raspberrypi" path="rdke/product/meta-product-raspberrypi" remote="rdkcentral" revision="develop">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_PRODUCT_LAYER"/>
+    </project>
+    
+    <!-- Vendor layers -->
+    <project groups="products" name="meta-oss-vendor-raspberrypi" path="rdke/vendor/meta-vendor-raspberrypi-oss" remote="rdkcentral" revision="develop">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_OSS_VENDOR"/>
+    </project>
+    
+    <project groups="layers" name="meta-vendor-raspberrypi-dev" path="rdke/vendor/meta-vendor-raspberrypi-dev" remote="rdkcentral" revision="develop">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_PLATFORM"/>
+        <annotation name="MANIFEST_EXPORT_PATH1" value="MANIFEST_PATH_BBLAYERS_TEMPLATE"/>
+    </project>
+    
+    <!-- Use https://git.yoctoproject.org/meta-raspberrypi/commit/?h=kirkstone&id=ab5815a2ca0a460398878f77a7e39bc1a6dfe0bf -->
+    <project groups="layers" name="meta-raspberrypi" path="rdke/vendor/soc/meta-raspberrypi" remote="oe" revision="ab5815a2ca0a460398878f77a7e39bc1a6dfe0bf" upstream="kirkstone">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_BSP"/>
+    </project>
 
 </manifest>
