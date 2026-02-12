@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <yocto version="kirkstone" />
+    <remote fetch="https://github.com/rdkcentral" name="rdkcentral" review="https://github.com/rdkcentral"/>
+
+    <project groups="extension" name="meta-oss-common-config" path="ext" remote="rdkcentral" revision="refs/tags/1.4.0">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_OSS_EXT"/>
+    </project>
+    
+    <project groups="configs" name="rdke-stb-config" path="profile" remote="rdkcentral" revision="refs/tags/1.0.0">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_PROFILE_CONFIG"/>
+    </project>
+
+    <project groups="configs" name="rdke-common-config" path="common" remote="rdkcentral" revision="refs/tags/1.0.13">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_CONFIG_COMMON"/>
+    </project>
+
+</manifest>
