@@ -45,6 +45,8 @@ IPK feeds are required for package installation and dependency resolution in dow
 
 ### Configure OSS IPK Feed
 
+Existing OSS model (OSS version < 4.10.0):
+
 Edit the file:
 ```
 rdke/common/meta-oss-reference-release/conf/machine/include/oss.inc
@@ -54,6 +56,12 @@ Set the feed path (example):
 ```bitbake
 OSS_IPK_SERVER_PATH = "file:/${HOME}/community_shared/rdk-arm64-oss/<OSS-IPK-Version>/ipk/"
 ```
+
+---
+
+New OSS model (OSS version >= 4.10.0):
+
+NOTE: There is no need to configure the OSS IPK feed; instead, OSS is built at each layer and generates the layer-specific OSS IPK feed. Every layer generates two feeds, which are consumed by an upper layer during the build process.
 
 ---
 
@@ -126,27 +134,29 @@ The generated IPKs are located at:
 
 ---
 
-## Deploying IPK Feed
+## Deploying Vendor IPK Feed
 
 Copy or sync the generated IPK feed to your shared/local repository path:
 
 ```bash
 # Debug variant (default)
-rsync -av ./build-raspberrypi4-64-rdke/tmp/deploy/ipk/raspberrypi4-64-rdke-vendor/* ~/community_shared/raspberrypi4-64-rdke-vendor/<OSS-IPK-Version>/ipk/
+rsync -av ./build-raspberrypi4-64-rdke/tmp/deploy/ipk/raspberrypi4-64-rdke-vendor/* ~/community_shared/raspberrypi4-64-rdke-vendor/<VENDOR-IPK-VERSION>/ipk/
 
 # Prod variant
-rsync -av ./build-raspberrypi4-64-rdke/tmp-prod/deploy/ipk/raspberrypi4-64-rdke-vendor/* ~/community_shared/raspberrypi4-64-rdke-vendor/<OSS-IPK-Version>/ipk/
+rsync -av ./build-raspberrypi4-64-rdke/tmp-prod/deploy/ipk/raspberrypi4-64-rdke-vendor/* ~/community_shared/raspberrypi4-64-rdke-vendor/<VENDOR-IPK-VERSION>/ipk/
 
 # ProdLog variant
-rsync -av ./build-raspberrypi4-64-rdke/tmp-prodlog/deploy/ipk/raspberrypi4-64-rdke-vendor/* ~/community_shared/raspberrypi4-64-rdke-vendor/<OSS-IPK-Version>/ipk/
+rsync -av ./build-raspberrypi4-64-rdke/tmp-prodlog/deploy/ipk/raspberrypi4-64-rdke-vendor/* ~/community_shared/raspberrypi4-64-rdke-vendor/<VENDOR-IPK-VERSION>/ipk/
 ```
 
 After syncing, confirm the `Packages.gz` files and directory layout are correct for the consumers of the feed.
 
+> **Note (new OSS model >= 4.10.0):** In addition to the vendor feed above, layer-specific OSS IPK feeds are generated under paths such as `~/community_shared/rdk-arm64-oss-vendor/raspberrypi4-64-rdke-vendor/<OSS-IPK-VERSION>/ipk/`.
+
 ### Notes
 
 - **IPK feed not found by consumers**  
-  Verify `OSS_IPK_SERVER_PATH` has `file:/` prefix and a trailing `/`. Confirm `Packages.gz` exists for each arch.
+  Verify `VENDOR_OSS_IPK_SERVER_PATH` has `file:/` prefix and a trailing `/`. Confirm `Packages.gz` exists for each arch.
 
 - **Paths with spaces**  
   Avoid spaces in file-system paths for feeds. Use underscores `_` instead.
