@@ -5,11 +5,11 @@
     <remote fetch="https://git.yoctoproject.org" name="oe" review="https://git.yoctoproject.org"/>
 
     <!-- Vendor layers -->
-    <project groups="products" name="meta-oss-vendor-raspberrypi" path="meta-vendor-raspberrypi-oss" remote="rdkcentral" revision="develop">
+    <project groups="products" name="meta-oss-vendor-raspberrypi" path="meta-vendor-raspberrypi-oss" remote="rdkcentral" revision="release/4.1.3">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_OSS_VENDOR"/>
     </project>
     
-    <project groups="layers" name="meta-vendor-raspberrypi-dev" path="meta-vendor-raspberrypi-dev" remote="rdkcentral" revision="develop">
+    <project groups="layers" name="meta-vendor-raspberrypi-dev" path="meta-vendor-raspberrypi-dev" remote="rdkcentral" revision="release/4.10.0">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_PLATFORM"/>
         <annotation name="MANIFEST_EXPORT_PATH1" value="MANIFEST_PATH_BBLAYERS_TEMPLATE"/>
     </project>
