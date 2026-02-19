@@ -7,7 +7,7 @@
     <project groups="stacklayering" name="meta-stack-layering-support" path="common/meta-stack-layering-support" remote="rdkcentral" revision="refs/tags/3.1.5">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_STACK_LAYERING_SUPPORT"/>
     </project>
-    <project groups="buildsupport" name="meta-rdk-auxiliary" path="common/meta-rdk-auxiliary" remote="rdkcentral" revision="refs/tags/1.7.0">
+    <project groups="buildsupport" name="meta-rdk-auxiliary" path="common/meta-rdk-auxiliary" remote="rdkcentral" revision="topic/RDKMVE-1639">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_RDK_AUXILIARY" />
     </project>
     <project groups="oe" name="meta-openembedded" path="common/meta-openembedded" remote="rdkcentral" revision="refs/tags/rdk-4.0.0">
