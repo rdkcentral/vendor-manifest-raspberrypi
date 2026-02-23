@@ -22,7 +22,7 @@
     <project groups="extention" name="meta-oss-common-config" path="configs/ext" remote="rdkcentral" revision="refs/tags/1.4.0">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_OSS_EXT"/>
     </project>
-    <project groups="rdk" name="meta-rdk-halif-headers" path="common/meta-rdk-halif-headers" remote="rdkcentral" revision="refs/tags/3.0.2">
+    <project groups="rdk" name="meta-rdk-halif-headers" path="common/meta-rdk-halif-headers" remote="rdkcentral" revision="refs/tags/4.1.2">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_RDK_HALIF_HEADERS"/>
     </project>
     <project groups="configs" name="rdke-stb-config" path="configs/profile" remote="rdkcentral" revision="refs/tags/1.0.0">
