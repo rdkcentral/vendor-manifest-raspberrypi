@@ -5,7 +5,7 @@
     <remote fetch="https://git.yoctoproject.org" name="oe" review="https://git.yoctoproject.org"/>
 
     <!-- Vendor layers -->
-    <project groups="products" name="meta-oss-vendor-raspberrypi" path="meta-vendor-raspberrypi-oss" remote="rdkcentral" revision="develop">
+    <project groups="products" name="meta-oss-vendor-raspberrypi" path="meta-vendor-raspberrypi-oss" remote="rdkcentral" revision="feature/RDKMVE-1834-westeros-1.01.64">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_OSS_VENDOR"/>
     </project>
     
