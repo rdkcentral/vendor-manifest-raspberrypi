@@ -9,11 +9,11 @@
     </project>
 
     <!-- Common submanifest -->
-    <submanifest name="common" project="rdke-generic-manifest" manifest-name="rdke-common-layers.xml" path="rdke/common" remote="rdkcentral" revision="develop">
+    <submanifest name="common" project="rdke-generic-manifest" manifest-name="rdke-common-layers.xml" path="rdke/common" remote="rdkcentral" revision="feature/RDKMVE-1795-halif-update-4.1.4">
     </submanifest>
 
     <!-- configs submanifest -->
-    <submanifest name="configs" project="rdke-generic-manifest" manifest-name="rdke-configs-layers.xml" path="rdke/configs" remote="rdkcentral" revision="develop">
+    <submanifest name="configs" project="rdke-generic-manifest" manifest-name="rdke-configs-layers.xml" path="rdke/configs" remote="rdkcentral" revision="feature/RDKMVE-1795-halif-update-4.1.4">
     </submanifest>
 
     <!-- Product layer -->
