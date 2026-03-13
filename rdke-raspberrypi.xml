@@ -13,7 +13,7 @@
     </submanifest>
 
     <!-- configs submanifest -->
-    <submanifest name="configs" project="rdke-generic-manifest" manifest-name="rdke-configs-layers.xml" path="rdke/configs" remote="rdkcentral" revision="develop">
+    <submanifest name="configs" project="rdke-generic-manifest" manifest-name="rdke-configs-layers.xml" path="rdke/configs" remote="rdkcentral" revision="feature/RDKMVE-1941">
     </submanifest>
 
     <!-- Product layer -->
