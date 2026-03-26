@@ -9,24 +9,24 @@
     </project>
 
     <!-- Common submanifest -->
-    <submanifest name="common" project="rdke-generic-manifest" manifest-name="rdke-common-layers.xml" path="rdke/common" remote="rdkcentral" revision="develop">
+    <submanifest name="common" project="rdke-generic-manifest" manifest-name="rdke-common-layers.xml" path="rdke/common" remote="rdkcentral" revision="refs/tags/1.0.0">
     </submanifest>
 
     <!-- configs submanifest -->
-    <submanifest name="configs" project="rdke-generic-manifest" manifest-name="rdke-configs-layers.xml" path="rdke/configs" remote="rdkcentral" revision="develop">
+    <submanifest name="configs" project="rdke-generic-manifest" manifest-name="rdke-configs-layers.xml" path="rdke/configs" remote="rdkcentral" revision="refs/tags/1.0.0">
     </submanifest>
 
     <!-- Product layer -->
-    <project groups="products" name="meta-product-raspberrypi" path="rdke/product/meta-product-raspberrypi" remote="rdkcentral" revision="develop">
+    <project groups="products" name="meta-product-raspberrypi" path="rdke/product/meta-product-raspberrypi" remote="rdkcentral" revision="refs/tags/4.1.4">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_PRODUCT_LAYER"/>
     </project>
     
     <!-- Vendor layers -->
-    <project groups="products" name="meta-oss-vendor-raspberrypi" path="rdke/vendor/meta-vendor-raspberrypi-oss" remote="rdkcentral" revision="develop">
+    <project groups="products" name="meta-oss-vendor-raspberrypi" path="rdke/vendor/meta-vendor-raspberrypi-oss" remote="rdkcentral" revision="refs/tags/4.1.4">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_OSS_VENDOR"/>
     </project>
     
-    <project groups="layers" name="meta-vendor-raspberrypi-dev" path="rdke/vendor/meta-vendor-raspberrypi-dev" remote="rdkcentral" revision="develop">
+    <project groups="layers" name="meta-vendor-raspberrypi-dev" path="rdke/vendor/meta-vendor-raspberrypi-dev" remote="rdkcentral" revision="refs/tags/4.11.0">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_PLATFORM"/>
         <annotation name="MANIFEST_EXPORT_PATH1" value="MANIFEST_PATH_BBLAYERS_TEMPLATE"/>
     </project>
