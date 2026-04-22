@@ -1,43 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <manifest>
     <yocto version="kirkstone" />
-    <remote fetch="https://github.com/rdkcentral" name="rdkcentral" review="https://github.com/rdkcentral"/>
-    <remote fetch="https://git.yoctoproject.org" name="oe" review="https://git.yoctoproject.org"/>
+    <remote fetch="https://github.com/rdkcentral" name="rdkcentral" review="https://github.com/rdkcentral" />
+    <remote fetch="https://git.yoctoproject.org" name="oe" review="https://git.yoctoproject.org" />
 
     <project groups="buildscripts" name="build-scripts" path="scripts" remote="rdkcentral" revision="refs/tags/1.0.1">
-        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_SCRIPTS"/>
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_SCRIPTS" />
     </project>
 
-    <!-- Common submanifest -->
+    
     <submanifest name="common" project="rdke-generic-manifest" manifest-name="rdke-common-layers.xml" path="rdke/common" remote="rdkcentral" revision="refs/tags/1.0.0">
     </submanifest>
 
-    <!-- configs submanifest -->
+    
     <submanifest name="configs" project="rdke-generic-manifest" manifest-name="rdke-configs-layers.xml" path="rdke/configs" remote="rdkcentral" revision="refs/tags/1.0.0">
     </submanifest>
 
-    <!-- Product layer -->
-    <project groups="products" name="meta-product-raspberrypi" path="rdke/product/meta-product-raspberrypi" remote="rdkcentral" revision="refs/tags/4.1.4">
-        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_PRODUCT_LAYER"/>
+    
+    <project groups="products" name="meta-product-raspberrypi" path="rdke/product/meta-product-raspberrypi" remote="rdkcentral" revision="8e94ca43a6f5f848fa865f3eb5fbd88241304a4c">
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_PRODUCT_LAYER" />
     </project>
     
-    <!-- Vendor layers -->
+    
     <project groups="products" name="meta-oss-vendor-raspberrypi" path="rdke/vendor/meta-vendor-raspberrypi-oss" remote="rdkcentral" revision="refs/tags/4.1.4">
-        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_OSS_VENDOR"/>
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_OSS_VENDOR" />
     </project>
     
     <project groups="layers" name="meta-vendor-raspberrypi-dev" path="rdke/vendor/meta-vendor-raspberrypi-dev" remote="rdkcentral" revision="refs/tags/4.11.0">
-        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_PLATFORM"/>
-        <annotation name="MANIFEST_EXPORT_PATH1" value="MANIFEST_PATH_BBLAYERS_TEMPLATE"/>
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_PLATFORM" />
+        <annotation name="MANIFEST_EXPORT_PATH1" value="MANIFEST_PATH_BBLAYERS_TEMPLATE" />
     </project>
     
     <project groups="layers" name="meta-image-support-rdke" path="rdke/vendor/meta-image-support-rdke" remote="rdkcentral" revision="refs/tags/1.0.0">
-        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_IMAGE_SUPPORT_RDKE"/>
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_IMAGE_SUPPORT_RDKE" />
     </project>
 
-    <!-- Use https://git.yoctoproject.org/meta-raspberrypi/commit/?h=kirkstone&id=ab5815a2ca0a460398878f77a7e39bc1a6dfe0bf -->
+    
     <project groups="layers" name="meta-raspberrypi" path="rdke/vendor/soc/meta-raspberrypi" remote="oe" revision="ab5815a2ca0a460398878f77a7e39bc1a6dfe0bf" upstream="kirkstone">
-        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_BSP"/>
+        <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_BSP" />
     </project>
 
 </manifest>
