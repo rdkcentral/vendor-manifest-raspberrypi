@@ -17,7 +17,7 @@
     </submanifest>
 
     
-    <project groups="products" name="meta-product-raspberrypi" path="rdke/product/meta-product-raspberrypi" remote="rdkcentral" revision="1a0d222e227fba89e8b19705c1deb1b54302d6ac">
+    <project groups="products" name="meta-product-raspberrypi" path="rdke/product/meta-product-raspberrypi" remote="rdkcentral" revision="73f967f4b40e0afff1ed49d0b0624625ffd7089f">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_PRODUCT_LAYER" />
     </project>
     
