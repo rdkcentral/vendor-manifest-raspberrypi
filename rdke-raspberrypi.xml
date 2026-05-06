@@ -22,7 +22,7 @@
     </project>
     
     
-    <project groups="products" name="meta-oss-vendor-raspberrypi" path="rdke/vendor/meta-vendor-raspberrypi-oss" remote="rdkcentral" revision="bbe88d2269d1ff03bc3ad9df76aefe53c486cf1a">
+    <project groups="products" name="meta-oss-vendor-raspberrypi" path="rdke/vendor/meta-vendor-raspberrypi-oss" remote="rdkcentral" revision="a373ed104ea83b7c82fee63d6e62367ea1b26bee">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_OSS_VENDOR" />
     </project>
     
