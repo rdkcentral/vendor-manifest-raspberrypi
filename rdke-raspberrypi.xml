@@ -9,11 +9,11 @@
     </project>
 
     
-    <submanifest name="common" project="rdke-generic-manifest" manifest-name="rdke-common-layers.xml" path="rdke/common" remote="rdkcentral" revision="release/1.0.1">
+    <submanifest name="common" project="rdke-generic-manifest" manifest-name="rdke-common-layers.xml" path="rdke/common" remote="rdkcentral" revision="refs/tags/1.0.1">
     </submanifest>
 
     
-    <submanifest name="configs" project="rdke-generic-manifest" manifest-name="rdke-configs-layers.xml" path="rdke/configs" remote="rdkcentral" revision="release/1.0.1">
+    <submanifest name="configs" project="rdke-generic-manifest" manifest-name="rdke-configs-layers.xml" path="rdke/configs" remote="rdkcentral" revision="refs/tags/1.0.1">
     </submanifest>
 
     
@@ -22,11 +22,11 @@
     </project>
     
     
-    <project groups="products" name="meta-oss-vendor-raspberrypi" path="rdke/vendor/meta-vendor-raspberrypi-oss" remote="rdkcentral" revision="release/4.1.6">
+    <project groups="products" name="meta-oss-vendor-raspberrypi" path="rdke/vendor/meta-vendor-raspberrypi-oss" remote="rdkcentral" revision="refs/tags/4.1.6">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_OSS_VENDOR" />
     </project>
     
-    <project groups="layers" name="meta-vendor-raspberrypi-dev" path="rdke/vendor/meta-vendor-raspberrypi-dev" remote="rdkcentral" revision="release/4.11.2">
+    <project groups="layers" name="meta-vendor-raspberrypi-dev" path="rdke/vendor/meta-vendor-raspberrypi-dev" remote="rdkcentral" revision="refs/tags/4.11.2">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_PLATFORM" />
         <annotation name="MANIFEST_EXPORT_PATH1" value="MANIFEST_PATH_BBLAYERS_TEMPLATE" />
     </project>
