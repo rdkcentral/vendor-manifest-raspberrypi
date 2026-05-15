@@ -22,11 +22,11 @@
     </project>
     
     
-    <project groups="products" name="meta-oss-vendor-raspberrypi" path="rdke/vendor/meta-vendor-raspberrypi-oss" remote="rdkcentral" revision="refs/tags/4.1.6">
+    <project groups="products" name="meta-oss-vendor-raspberrypi" path="rdke/vendor/meta-vendor-raspberrypi-oss" remote="rdkcentral" revision="323b6f1758e3a0b714de72a1e4057a7be14d06b3">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_OSS_VENDOR" />
     </project>
     
-    <project groups="layers" name="meta-vendor-raspberrypi-dev" path="rdke/vendor/meta-vendor-raspberrypi-dev" remote="rdkcentral" revision="refs/tags/4.11.2">
+    <project groups="layers" name="meta-vendor-raspberrypi-dev" path="rdke/vendor/meta-vendor-raspberrypi-dev" remote="rdkcentral" revision="a84382a60ddff451860d8cb977730c3e20528004">
         <annotation name="MANIFEST_EXPORT_PATH" value="MANIFEST_PATH_PLATFORM" />
         <annotation name="MANIFEST_EXPORT_PATH1" value="MANIFEST_PATH_BBLAYERS_TEMPLATE" />
     </project>
