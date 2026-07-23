@@ -9,7 +9,7 @@
     </project>
 
     
-    <submanifest name="common" project="rdke-generic-manifest" manifest-name="rdke-common-layers.xml" path="rdke/common" remote="rdkcentral" revision="refs/tags/1.0.5">
+    <submanifest name="common" project="rdke-generic-manifest" manifest-name="rdke-common-layers.xml" path="rdke/common" remote="rdkcentral" revision="refs/tags/1.0.1">
     </submanifest>
 
     
